@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-dark {
+  background-color: #512DA8;
+  margin-bottom: 100px;
+}
+
+.region {
+  margin-top: 100px;
+}
+
+input, select {
+  margin-bottom: 10px;
+}
