@@ -5,12 +5,7 @@ import ImpactResult from './ImpactResult';
 import SevereImpact from './SevereImpact';
 
 
-class ImpactForm extends Component {
-
-	constructor(props) {
-	    super(props);
-	    this.state = {
-			data: {
+const DATA = {
 				region: {
 					name: "",
 					avgAge: null,
@@ -22,13 +17,19 @@ class ImpactForm extends Component {
 				reportedCases: null,
 				population: null,
 				totalHospitalBeds: null
-			}, // the input data you got
+			};
+
+class ImpactForm extends Component {
+
+	constructor(props) {
+	    super(props);
+	    this.state = {
+			data:  DATA,
 			estimate: null
 	    };
 
 	    this.handleClick = this.handleClick.bind(this);
 		this.getData = this.getData.bind(this);
-		this.getEstimate = this.getEstimate.bind(this);
 	}
 
 	handleClick() {
@@ -51,15 +52,11 @@ class ImpactForm extends Component {
 	}
 
 	getData() {
-		console.log('Data ', this.state.data)
 		const result = covid19ImpactEstimator(this.state.data);
 		console.log('result ', result)
-		this.setState({estimate: result}, this.getEstimate);
+		this.setState({estimate: result});
 	}
 
-	getEstimate() {
-		console.log('Estimate ', this.state.estimate)
-	}
 
 	render() {
 		return(
@@ -82,7 +79,7 @@ class ImpactForm extends Component {
 							<input type="text" className="form-control" placeholder="Total Hospital Beds" data-total-hospital-beds ref={(c) => this.totalHospitalBeds = c} name="totalHospitalBeds" />
 							
 						</form>
-						<Button type="button" name="" className="form-control" onClick={this.handleClick} data-go-estimate>Go Estimate</Button>
+						<Button type="button" className="form-control estimate_button" onClick={this.handleClick} data-go-estimate>Go Estimate</Button>
 					</div>
 					<ImpactResult estimate={this.state.estimate} />
 					<SevereImpact estimate={this.state.estimate} />
