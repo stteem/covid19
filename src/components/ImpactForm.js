@@ -65,8 +65,8 @@ class ImpactForm extends Component {
 				<div className="row">
 				<div className="intro">
 					<h4>COVID-19 Infections And Impact Estimation</h4>
-					<p>COVID-19 has been declared a pandemic by WHO. As our contribution to fighting the virus to a standstill, we have used WHO metrics to bulid a tool that
-						estimates, and forecast infections impact by region. We hope this will come in handy for all stakeholders. Feel free to input appriopriate data in order to get estimates.</p>
+					<p>COVID-19 has been declared a pandemic by WHO. In line with fighting the virus to a standstill, we have leveraged WHO metrics to build a tool that
+						estimates, and forecasts infections impact by region. We hope this tool will come in handy for all stakeholders. Feel free to input appriopriate data in order to get estimates.</p>
 				</div>
 				    <div className="col-12 col-md-4">
 				    <Card className="main">
