@@ -49,3 +49,13 @@
 .intro {
   margin-bottom: 50px;
 }
+
+.centre {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main {
+  margin-bottom: 50px;
+}

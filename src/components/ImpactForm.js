@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'reactstrap';
+import { Card, CardTitle, Button } from 'reactstrap';
 import covid19ImpactEstimator from '../calculator/estimate.js';
 import ImpactResult from './ImpactResult';
 import SevereImpact from './SevereImpact';
@@ -62,12 +62,13 @@ class ImpactForm extends Component {
 			<div className="container">
 				<div className="row">
 				<div className="intro">
-					<h4>COVID-19 Infections And Impact Estimation Tool</h4>
+					<h4>COVID-19 Infections And Impact Estimation</h4>
 					<p>COVID-19 has been declared a pandemic by WHO. As our contribution to fighting the virus to a standstill, we have used WHO metrics to bulid a tool that
 						estimates, and forecast infections impact by region. We hope this will come in handy for all stakeholders. Feel free to input appriopriate data in order to get estimates.</p>
 				</div>
 				    <div className="col-12 col-md-4">
-				    <Card>
+				    <Card className="main">
+				    	<CardTitle className="centre"><h5>Estimation Tool</h5></CardTitle>
 						<form>
 							<label className="col-12 col-md-12">
 							<strong>Region</strong>
