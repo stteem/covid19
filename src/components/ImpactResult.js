@@ -9,7 +9,7 @@ function ImpactResult({estimate}) {
 			<div className="col-12 col-sm-4 col-md-4">
 				<Card>
 					<CardBody>
-						<CardTitle><h4>Impact</h4></CardTitle>
+						<CardTitle><h5>Impact</h5></CardTitle>
 						<CardText>Currently Infected: {estimate.impact.currentlyInfected}</CardText>
 						<CardText>Infections By Requested Time: {estimate.impact.infectionsByRequestedTime}</CardText>
 						<CardText>Severe Cases By Requested Time: {estimate.impact.severeCasesByRequestedTime}</CardText>

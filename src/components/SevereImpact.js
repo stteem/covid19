@@ -9,7 +9,7 @@ function SevereImpact({estimate}) {
 			<div className="col-12 col-sm-4 col-md-4">
 				<Card>
 					<CardBody>
-						<CardTitle><h4>Severe Impact</h4></CardTitle>
+						<CardTitle><h5>Severe Impact</h5></CardTitle>
 						<CardText>Currently Infected: {estimate.severeImpact.currentlyInfected}</CardText>
 						<CardText>Infections By Requested Time: {estimate.severeImpact.infectionsByRequestedTime}</CardText>
 						<CardText>Severe Cases By Requested Time: {estimate.severeImpact.severeCasesByRequestedTime}</CardText>
