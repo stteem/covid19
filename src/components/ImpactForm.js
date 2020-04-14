@@ -3,7 +3,6 @@ import { Card, CardTitle, Button } from 'reactstrap';
 import covid19ImpactEstimator from '../calculator/estimate.js';
 import ImpactResult from './ImpactResult';
 import SevereImpact from './SevereImpact';
-import Footer from './Footer';
 
 
 
@@ -121,7 +120,6 @@ class ImpactForm extends Component {
 					
 					<ImpactResult estimate={this.state.estimate} />
 					<SevereImpact estimate={this.state.estimate} />
-					<Footer />
 				</div>
 			</div>
 		);
